@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/heartbeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/dseg14classic"
+            android:paddingTop="@dimen/screen_percentage_05"
+            android:paddingBottom="@dimen/screen_percentage_05"
+            android:text="Waiting"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Display2"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/heartbeatmax"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:fontFamily="@font/dseg14classic"
+            android:paddingTop="@dimen/screen_percentage_05"
+            android:text="MAX"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Display2"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/heartbeatmin"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:fontFamily="@font/dseg14classic"
+            android:paddingTop="@dimen/screen_percentage_05"
+            android:text="MIN"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Display2"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </TableLayout>
+</androidx.wear.widget.BoxInsetLayout>

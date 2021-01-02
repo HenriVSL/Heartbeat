@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/screen_percentage_15"
+            android:paddingBottom="@dimen/screen_percentage_05"
+            android:text="EXIT ?"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonExitYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onExitYes"
+            android:text="YES" />
+
+        <Button
+            android:id="@+id/buttonExitNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onExitNo"
+            android:text="NO" />
+
+        <TextView
+            android:id="@+id/CopyrightText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/screen_percentage_15"
+            android:layout_marginTop="@dimen/screen_percentage_05"
+            android:text="@string/copyright"
+            android:textAlignment="center"
+            android:textColor="#858585"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
